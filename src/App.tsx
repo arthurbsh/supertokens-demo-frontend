@@ -18,7 +18,7 @@ SuperTokens.init({
     appInfo: {
         // learn more about this on https://supertokens.com/docs/thirdpartyemailpassword/appinfo
         appName: "SuperTokensTest",
-        apiDomain: "https://ahol-supertokens-test.azurewebsites.net",
+        apiDomain: process.env.REACT_APP_API_DOMAIN || '',
         websiteDomain: "http://localhost:3000",
         apiBasePath: "/auth",
         websiteBasePath: "/auth"
